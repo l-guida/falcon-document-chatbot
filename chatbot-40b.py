@@ -10,11 +10,12 @@ from random import randint
 from transformers import AutoTokenizer
 
 st.set_page_config(page_title="Document Analysis", page_icon=":robot:")
-st.header("Chat with your document 📄  (Model: Falcon-40B-Instruct)")
+st.header("Chat with Falcon-40B-Instruct)")
 
-endpoint_name = "falcon-40b-instruct-48xl"
+endpoint_name = "falcon-40b-instruct-12xl"
 
 model = "tiiuae/falcon-40b"
+
 tokenizer = AutoTokenizer.from_pretrained(model)
 
 
