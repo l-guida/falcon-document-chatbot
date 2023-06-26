@@ -33,7 +33,7 @@ class ContentHandler(LLMContentHandler):
         response_json = output.read()
         res = json.loads(response_json)
         ans = res[0]['generated_text'][self.len_prompt:]
-        st.write(f"ANS: {ans}")
+        #st.write(f"ANS: {ans}")
         ans = ans.split("Human", 1)[0]
         ans = ans.split("User", 1)[0]
         ans = ans.split("AI", 1)[0]
